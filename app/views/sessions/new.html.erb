@@ -1,0 +1,10 @@
+<div style="text-align:center;">
+<%= form_for @user do |form| %>
+    <%= form.label :user_name %>
+    <%= form.text_field :user_name %><br><br>
+    <%= form.label :password %>
+    <%= form.password_field :password %><br><br>
+    <%= form.submit 'login' %>
+<% end %>
+<%= link_to 'sign up', new_user_path %>
+</div>
